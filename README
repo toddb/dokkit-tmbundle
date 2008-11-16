@@ -1,0 +1,22 @@
+Dokkit TextMate Bundle
+Copyright (C) 2008 toddb todd@8wireunlimited.com
+
+To be used with dokkit - a ruby documentation generator. To install 'gem install dokkit' see http://dokkit.rubyforge.org
+
+Main functions:
+ * Rake integration for building
+ * Preview in Browser
+ * List of formats for chars and paragraphs
+ * Document structure formats
+
+Also see:
+* tmbundles on github: http://github.com/kballard/textmate-bundles/tree
+* rake installer for bundles: http://github.com/shanesveller/textmate-bundles-rake/tree
+
+TODO
+====
+
+* Split the bundle between Dokkit and Deplate
+* Create a New File Template (this didn't work as planned so I backed it)
+* Fix image dragging command: Deplate/Dokkit is not working with an img - currently when dragging an image to the file it formats in markdown - this does not output correctly
+* Merge this bundle into tmbundles on GitHub
