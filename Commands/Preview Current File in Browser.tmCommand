@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+system 'rake'
+
+file = ENV['TM_FILEPATH']
+file = file.gsub(/deplate/, 'html').gsub(/doc\/pages/, 'output')
+cmd = File.exists?(file) ? 'open ' + file : ''
+system cmd</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^~@p</string>
+	<key>name</key>
+	<string>Preview Current File in Browser</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>text.html.deplate</string>
+	<key>uuid</key>
+	<string>96CD24C8-8816-401B-8C6B-F48035C5C5C0</string>
+</dict>
+</plist>

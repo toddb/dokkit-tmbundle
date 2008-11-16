@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>
+File: [[$TM_DROPPED_FILE][TM_DROPPED_FILE]]
+
+python "$TM_BUNDLE_SUPPORT/bin/html2text.py" &lt;"$TM_DROPPED_FILE"|perl -pe 's/\\/\\\\/g; s/`/\\`/g; s/\$/\\\$/g'</string>
+	<key>draggedFileExtensions</key>
+	<array>
+		<string>htm</string>
+		<string>html</string>
+		<string>js</string>
+		<string>rb</string>
+		<string>py</string>
+		<string>java</string>
+		<string>cs</string>
+		<string>c</string>
+		<string>h</string>
+		<string>txt</string>
+		<string>css</string>
+	</array>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Insert HTML/JS document as markdown</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>text.html.deplate</string>
+	<key>uuid</key>
+	<string>AA7C0B7C-61B5-4503-BEE8-81D761535655</string>
+</dict>
+</plist>
